@@ -1,12 +1,45 @@
-# React + Vite
+# 🍔 Food Searcher - Trabajo Práctico UTN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Alumna:** María Tarima  
+**Materia:** Proyecto Integrador - UTN  
+**Repositorio:** [Ver en GitHub](https://github.com/manaomimasha/utn-api)  
+**Demo Online:** [https://utn-api-manaomimashas-projects.vercel.app](https://utn-api-manaomimashas-projects.vercel.app)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Descripción
 
-## Expanding the ESLint configuration
+Aplicación web desarrollada con **React + Vite + TailwindCSS** que permite buscar recetas de comida por ingredientes, utilizando la API pública de [TheMealDB](https://www.themealdb.com/).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Los resultados incluyen imagen, categoría, país de origen y etiquetas asociadas al plato.
+
+---
+
+## ✨ Tecnologías utilizadas
+
+- ⚛️ React
+- ⚡ Vite
+- 🎨 TailwindCSS
+- 🌐 Fetch API
+- 🍽️ TheMealDB API
+
+---
+
+## 🧪 Funcionalidades
+
+- Búsqueda por ingredientes (en inglés)
+- Visualización de resultados con tarjetas responsive
+- Estilos modernos y adaptables a móviles
+
+---
+
+## 🖼️ Captura de pantalla
+
+![alt text](image.png)
+
+
+## 📁 Cómo clonar el proyecto
+git clone https://github.com/manaomimasha/utn-api.git
+cd utn-api
+npm install
+npm run dev

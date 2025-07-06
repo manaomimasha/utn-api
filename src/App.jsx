@@ -19,13 +19,13 @@ function App() {
     // this happens because the json has a key of meals in the json return , if theres no response i return an empty array that what the || are for
   };
   return (
-    <div className="min-h-screen bg-gray-100 p-6 font-sans">
+    <div className="min-h-screen bg-gray-100 p-6 font-sans app">
  
       <h1 className="text-3xl font-bold text-center mb-6">
         Food searcher by ingredients 🍔🍰🍜{" "}
       </h1>
       <h3 className="mb-4  text-center">
-        In the input write in english, for example: cake, soup, meat
+        In the input write in english, for example: cake, soup, meat.
       </h3>
 
       <div className="flex justify-center mb-6">
