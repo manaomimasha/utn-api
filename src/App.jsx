@@ -28,7 +28,7 @@ function App() {
         In the input write in english, for example: cake, soup, meat.
       </h3>
 
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-6 text-black">
         <input
           type="text"
           placeholder="Search for food..."

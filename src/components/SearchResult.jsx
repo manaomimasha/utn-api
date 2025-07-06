@@ -1,7 +1,7 @@
 export default function SearchResult({ meals }) {
   if (meals.length === 0) {
     return (
-      <div className="flex items-center justify-center h-64 text-center">
+      <div className="flex items-center justify-center h-64 text-center ">
         <h1 className="text-lg text-gray-600">
           No meals found, please try typing ingredients in English.
         </h1>
@@ -12,7 +12,7 @@ export default function SearchResult({ meals }) {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center text-black">
         {/* <h1 className="text-center" >
           {meals.length == 0 &&
             "No meals found, please try type ingredients in english"}
