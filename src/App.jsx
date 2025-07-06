@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import { useEffect, useState } from "react";
+import "./index.css";
+import SearchResult from "./components/SearchResult.jsx";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [searchTerm, setSearchTerm] = useState("");
+  const [meals, setMeals] = useState([]);
 
+  const handleSearch = async () => {
+    if (searchTerm === "") return;
+
+    const response = await fetch(
+      `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`
+    );
+    const data = await response.json();
+    setMeals(data.meals || []);
+    // this happens because the json has a key of meals in the json return , if theres no response i return an empty array that what the || are for
+  };
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="min-h-screen bg-gray-100 p-6 font-sans">
+ 
+      <h1 className="text-3xl font-bold text-center mb-6">
+        Food searcher by ingredients 🍔🍰🍜{" "}
+      </h1>
+      <h3 className="mb-4  text-center">
+        In the input write in english, for example: cake, soup, meat
+      </h3>
+
+      <div className="flex justify-center mb-6">
+        <input
+          type="text"
+          placeholder="Search for food..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="p-2 border border-gray-400 rounded-l-md"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleSearch();
+            }
+          }}
+        />
+        <button
+          onClick={handleSearch}
+          className="bg-green-600 text-white px-4 rounded-r-md hover:bg-green-700"
+        >
+          Search
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <SearchResult meals={meals} />
+    </div>
+  );
 }
+
 
 export default App
