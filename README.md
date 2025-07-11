@@ -27,9 +27,15 @@ Los resultados incluyen imagen, categoría, país de origen y etiquetas asociada
 
 ## 🧪 Funcionalidades
 
-- Búsqueda por ingredientes (en inglés)
-- Visualización de resultados con tarjetas responsive
-- Estilos modernos y adaptables a móviles
+- 🔎 Búsqueda automática por ingrediente en inglés mientras el usuario escribe
+- ❌ Si el input está vacío, los resultados se borran automáticamente
+- 🧾 Renderizado de recetas con:
+  - Imagen ilustrativa
+  - Categoría del plato
+  - Área geográfica de origen
+  - Etiquetas (tags)
+- 📱 Diseño responsive con tarjetas adaptables a dispositivos móviles
+
 
 ---
 
@@ -39,6 +45,8 @@ Los resultados incluyen imagen, categoría, país de origen y etiquetas asociada
 
 
 ## 📁 Cómo clonar el proyecto
+
+```bash
 git clone https://github.com/manaomimasha/utn-api.git
 cd utn-api
 npm install
