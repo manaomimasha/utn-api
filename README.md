@@ -41,8 +41,7 @@ Los resultados incluyen imagen, categoría, país de origen y etiquetas asociada
 
 ## 🖼️ Captura de pantalla
 
-![alt text](image.png)
-
+![alt text](image-1.png)
 
 ## 📁 Cómo clonar el proyecto
 
