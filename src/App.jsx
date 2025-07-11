@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./style.css";
+import "./index.css";
 import SearchResult from "./components/SearchResult";
 
 function App() {
